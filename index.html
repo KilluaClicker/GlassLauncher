@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#050506">
+
+  <title>GlassLauncher — красивый монохромный лаунчер Minecraft</title>
+  <meta name="description" content="GlassLauncher — тихий монохромный лаунчер Minecraft от KilluaDEV. Fabric, Forge, NeoForge, Quilt, Vanilla, моды, скины и автоматическая установка Java 21. Скачать бесплатно для Windows 10/11.">
+  <meta name="keywords" content="GlassLauncher, лаунчер Minecraft, Minecraft launcher, Fabric, Forge, NeoForge, Quilt, моды Minecraft, скины Minecraft, KilluaDEV">
+  <meta name="author" content="KilluaDEV">
+  <link rel="canonical" href="https://killuaclicker.github.io/GlassLauncher/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="GlassLauncher">
+  <meta property="og:title" content="GlassLauncher — красивый монохромный лаунчер Minecraft">
+  <meta property="og:description" content="Тишина стекла. Точность запуска. Fabric, Forge, NeoForge, Quilt, Vanilla, моды, скины и Java 21 — в одном лаунчере.">
+  <meta property="og:url" content="https://killuaclicker.github.io/GlassLauncher/">
+  <meta property="og:image" content="https://killuaclicker.github.io/GlassLauncher/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="GlassLauncher — монохромный лаунчер Minecraft от KilluaDEV">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GlassLauncher — красивый монохромный лаунчер Minecraft">
+  <meta name="twitter:description" content="Тишина стекла. Точность запуска. Скачать бесплатно для Windows 10/11.">
+  <meta name="twitter:image" content="https://killuaclicker.github.io/GlassLauncher/assets/og.png">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/og.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="assets/fonts/Unbounded-Variable.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/fonts/Onest-Variable.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/screens/hero.png" as="image">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "GlassLauncher",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Windows 10, Windows 11",
+    "softwareVersion": "1.0.0",
+    "fileSize": "4.2MB",
+    "downloadUrl": "https://killuaclicker.github.io/GlassLauncher/downloads/GlassLauncherSetup.exe",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "RUB" },
+    "author": { "@type": "Person", "name": "KilluaDEV" },
+    "publisher": { "@type": "Organization", "name": "KilluaDEV" }
+  }
+  </script>
+</head>
+<body>
+  <div class="backdrop" aria-hidden="true">
+    <span class="backdrop__aurora backdrop__aurora--one"></span>
+    <span class="backdrop__aurora backdrop__aurora--two"></span>
+    <span class="backdrop__aurora backdrop__aurora--three"></span>
+    <span class="backdrop__grid"></span>
+    <span class="backdrop__noise"></span>
+    <span class="backdrop__vignette"></span>
+  </div>
+
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="brand" href="#top" aria-label="GlassLauncher — на главную">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M12 2.75 21 8v8l-9 5.25L3 16V8l9-5.25Z" stroke="currentColor" stroke-width="1.05"/>
+            <path d="m8.35 10.05 3.4-2 3.9 2.3v3.3l-3.9 2.3-3.4-2" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand__name">GLASS<span>LAUNCHER</span></span>
+        <span class="badge badge--tiny">РЕЛИЗ</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Навигация по сайту">
+        <a href="#features">Возможности</a>
+        <a href="#showcase">Скриншоты</a>
+        <a href="#download">Скачать</a>
+        <a href="#install">Установка</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="icon-btn" href="https://github.com/KilluaClicker/GlassLauncher" target="_blank" rel="noopener" aria-label="GlassLauncher на GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 .7a11.3 11.3 0 0 0-3.57 22.02c.57.1.78-.25.78-.55v-2.13c-3.16.69-3.83-1.34-3.83-1.34-.52-1.31-1.26-1.66-1.26-1.66-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.73 2.65 1.23 3.3.94.1-.73.4-1.23.72-1.51-2.52-.29-5.17-1.26-5.17-5.61 0-1.24.44-2.25 1.17-3.05-.12-.29-.51-1.44.11-3 0 0 .95-.3 3.12 1.17a10.8 10.8 0 0 1 5.68 0c2.17-1.47 3.12-1.17 3.12-1.17.62 1.56.23 2.71.11 3 .73.8 1.17 1.81 1.17 3.05 0 4.36-2.65 5.32-5.18 5.6.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.79.55A11.3 11.3 0 0 0 12 .7Z"/>
+          </svg>
+        </a>
+        <a class="btn btn--small btn--primary" href="downloads/GlassLauncherSetup.exe" download data-download>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4v10m0 0 4-4m-4 4-4-4M5 19h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Скачать
+        </a>
+        <button class="nav__burger" id="navBurger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero__inner">
+        <div class="hero__copy" data-reveal>
+          <div class="eyebrow">
+            <span class="eyebrow__dot" aria-hidden="true"></span>
+            Лучший, красивый лаунчер от KilluaDEV
+          </div>
+
+          <h1 class="hero__title">
+            <span class="hero__title-light">Glass</span><span class="hero__title-bold">Launcher</span>
+          </h1>
+
+          <p class="hero__tagline">Тишина стекла. Точность запуска.</p>
+          <p class="hero__lead">
+            Ваша игра — наша забота! Монохромный лаунчер Minecraft, в котором всё на месте:
+            версии, загрузчики, моды, скины и Java 21. Без консоли, без шума, без лишних кликов.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--large" href="downloads/GlassLauncherSetup.exe" download data-download>
+              <span class="btn__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 4v10m0 0 4-4m-4 4-4-4M5 19h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="btn__text">
+                <strong>Скачать лаунчер</strong>
+                <small>Windows 10/11 · 4,20 МБ</small>
+              </span>
+            </a>
+            <a class="btn btn--ghost btn--large" href="#showcase">
+              Посмотреть интерфейс
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m0 0-5-5m5 5-5 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+
+          <div class="hero__meta">
+            <span>v1.0.0</span>
+            <span>Java 21</span>
+            <span>5 загрузчиков</span>
+            <span>Без консоли</span>
+          </div>
+        </div>
+
+        <div class="hero__visual" data-reveal>
+          <div class="hero__halo" aria-hidden="true"></div>
+          <div class="app-window">
+            <div class="app-window__bar">
+              <span class="app-window__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="app-window__title">GlassLauncher.exe</span>
+              <span class="app-window__controls" aria-hidden="true">— □ ×</span>
+            </div>
+            <img src="assets/screens/hero.png" width="1440" height="900" alt="Главный экран GlassLauncher: выбор версии, загрузчика и ника, кнопка Играть" fetchpriority="high">
+          </div>
+          <div class="float-chip float-chip--one" aria-hidden="true">
+            <span class="float-chip__dot"></span>
+            <span><small>ЗАГРУЗЧИК</small><strong>Fabric</strong></span>
+          </div>
+          <div class="float-chip float-chip--two" aria-hidden="true">
+            <span class="float-chip__dot"></span>
+            <span><small>СЕССИЯ</small><strong>Готова</strong></span>
+          </div>
+          <div class="float-chip float-chip--three" aria-hidden="true">
+            <span class="float-chip__dot"></span>
+            <span><small>ПАМЯТЬ</small><strong>8 ГБ</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>FABRIC</span><i></i><span>FORGE</span><i></i><span>NEOFORGE</span><i></i><span>QUILT</span><i></i><span>VANILLA</span><i></i><span>MODRINTH</span><i></i><span>JAVA 21</span><i></i><span>GLASS UI</span><i></i>
+          <span>FABRIC</span><i></i><span>FORGE</span><i></i><span>NEOFORGE</span><i></i><span>QUILT</span><i></i><span>VANILLA</span><i></i><span>MODRINTH</span><i></i><span>JAVA 21</span><i></i><span>GLASS UI</span><i></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="GlassLauncher в цифрах">
+      <div class="stats__item" data-reveal><strong>5</strong><span>загрузчиков</span></div>
+      <div class="stats__item" data-reveal><strong>1</strong><span>клик до игры</span></div>
+      <div class="stats__item" data-reveal><strong>100%</strong><span>монохром</span></div>
+      <div class="stats__item" data-reveal><strong>0</strong><span>консольных окон</span></div>
+    </section>
+
+    <section class="section" id="features">
+      <header class="section__head" data-reveal>
+        <span class="section__index">01 / ВОЗМОЖНОСТИ</span>
+        <h2>Всё, что нужно.<br><span>Ничего лишнего.</span></h2>
+        <p>GlassLauncher не пытается быть умнее тебя. Он просто делает свою работу: тихо, точно и красиво.</p>
+      </header>
+
+      <div class="features">
+        <article class="feature" data-reveal>
+          <span class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 7.5 12 3l8 4.5v9L12 21l-8-4.5v-9Z" stroke="currentColor" stroke-width="1.2"/><path d="m8 10 4-2.3 4 2.3v4L12 16.3 8 14v-4Z" stroke="currentColor" stroke-width="1.1"/></svg>
+          </span>
+          <h3>Пять загрузчиков</h3>
+          <p>Fabric, Forge, NeoForge, Quilt и Vanilla. Выбери версию — лаунчер сам соберёт библиотеки и профиль.</p>
+          <div class="feature__tags"><span>Fabric</span><span>Forge</span><span>NeoForge</span><span>Quilt</span></div>
+        </article>
+
+        <article class="feature" data-reveal>
+          <span class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="6.2" height="6.2" rx="1.6" stroke="currentColor" stroke-width="1.2"/><rect x="13.8" y="4" width="6.2" height="6.2" rx="1.6" stroke="currentColor" stroke-width="1.2"/><rect x="4" y="13.8" width="6.2" height="6.2" rx="1.6" stroke="currentColor" stroke-width="1.2"/><path d="M16.9 13.9v6.2M13.8 17h6.2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Моды и шейдеры</h3>
+          <p>Каталог Modrinth и CurseForge прямо в лаунчере. Fabric API, Sodium, Iris Shaders — в один клик. Зависимости предложит скачать отдельно.</p>
+          <div class="feature__tags"><span>Modrinth</span><span>CurseForge</span><span>Iris</span></div>
+        </article>
+
+        <article class="feature" data-reveal>
+          <span class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="7.6" r="3.1" stroke="currentColor" stroke-width="1.2"/><path d="M5.8 19.1c.7-3.5 2.7-5.2 6.2-5.2s5.5 1.7 6.2 5.2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M9.5 20h5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Скины, которые видно</h3>
+          <p>Загрузи PNG или выбери монохромный пресет. Скин применяется в игре через локальный ресурспак — без аккаунта Microsoft.</p>
+          <div class="feature__tags"><span>64 × 64 PNG</span><span>Оффлайн</span><span>В игре</span></div>
+        </article>
+
+        <article class="feature" data-reveal>
+          <span class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M7 4.5h7.5a3.5 3.5 0 0 1 0 7H7v-7Z" stroke="currentColor" stroke-width="1.2"/><path d="M7 11.5h8a3.5 3.5 0 0 1 0 7H7v-7Z" stroke="currentColor" stroke-width="1.2"/><path d="M7 4.5v14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Java 21 под капотом</h3>
+          <p>Лаунчер найдёт установленную Java или скачает подходящую. Ассеты, библиотеки и загрузчик подтянутся сами.</p>
+          <div class="feature__tags"><span>Автоустановка</span><span>Java 21</span><span>Без настройки</span></div>
+        </article>
+
+        <article class="feature" data-reveal>
+          <span class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h9m3 0h4M4 12h4m3 0h9M4 17h10m3 0h3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><circle cx="15" cy="7" r="1.8" stroke="currentColor" stroke-width="1.2"/><circle cx="9" cy="12" r="1.8" stroke="currentColor" stroke-width="1.2"/><circle cx="16" cy="17" r="1.8" stroke="currentColor" stroke-width="1.2"/></svg>
+          </span>
+          <h3>Монохромные темы</h3>
+          <p>Mono, Graphite, Frost и Sand. Стекло, мягкие тени и ни одного лишнего цвета. Интерфейс не спорит с игрой.</p>
+          <div class="feature__tags"><span>Mono</span><span>Graphite</span><span>Frost</span><span>Sand</span></div>
+        </article>
+
+        <article class="feature" data-reveal>
+          <span class="feature__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M5 5.5h14v13H5z" stroke="currentColor" stroke-width="1.2" rx="2"/><path d="m8 10 2.3 2L8 14.2M12.4 14.6h3.8" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Тихий запуск</h3>
+          <p>Никаких чёрных консольных окон и лишних процессов. Только игра, музыка и твой мир. Логи — если понадобятся.</p>
+          <div class="feature__tags"><span>Без консоли</span><span>Логи</span><span>Оффлайн</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="showcase">
+      <header class="section__head" data-reveal>
+        <span class="section__index">02 / ИНТЕРФЕЙС</span>
+        <h2>Стекло, которое<br><span>не мешает играть.</span></h2>
+        <p>Каждый экран — часть одного спокойного интерфейса. Нажми на скриншот, чтобы рассмотреть.</p>
+      </header>
+
+      <div class="gallery" data-reveal>
+        <button class="shot shot--hero" type="button" data-full="assets/screens/hero.png" data-title="Главный экран" data-note="Версия, загрузчик, ник и кнопка «Играть» — всё в одном месте.">
+          <img src="assets/screens/hero.png" width="1440" height="900" alt="Главный экран GlassLauncher" loading="lazy">
+          <span class="shot__label"><b>01</b> Главный экран</span>
+        </button>
+
+        <button class="shot" type="button" data-full="assets/screens/mods.png" data-title="Моды и шейдеры" data-note="Каталог Modrinth с поиском, фильтрами и установкой в один клик.">
+          <img src="assets/screens/mods.png" width="1440" height="900" alt="Каталог модов и шейдеров GlassLauncher" loading="lazy">
+          <span class="shot__label"><b>02</b> Моды</span>
+        </button>
+
+        <button class="shot" type="button" data-full="assets/screens/skins.png" data-title="Скины" data-note="Пресеты и загрузка PNG. Скин применяется в игре через ресурспак.">
+          <img src="assets/screens/skins.png" width="1440" height="900" alt="Экран скинов GlassLauncher" loading="lazy">
+          <span class="shot__label"><b>03</b> Скины</span>
+        </button>
+
+        <button class="shot" type="button" data-full="assets/screens/versions.png" data-title="Версии Minecraft" data-note="Релизы, снапшоты и старые версии из манифеста Mojang.">
+          <img src="assets/screens/versions.png" width="1440" height="900" alt="Выбор версии Minecraft в GlassLauncher" loading="lazy">
+          <span class="shot__label"><b>04</b> Версии</span>
+        </button>
+
+        <button class="shot" type="button" data-full="assets/screens/deps.png" data-title="Зависимости" data-note="Честный вопрос: «Скачать зависимости?» — и кнопки «Скачать» / «Не скачивать».">
+          <img src="assets/screens/deps.png" width="1440" height="900" alt="Диалог скачивания зависимостей модов" loading="lazy">
+          <span class="shot__label"><b>05</b> Зависимости</span>
+        </button>
+
+        <button class="shot shot--wide" type="button" data-full="assets/screens/minecraft.png" data-title="Minecraft в стиле Glass" data-note="Монохромная панорама, логотип GLASS и русские сплэши — прямо в главном меню игры.">
+          <img src="assets/screens/minecraft.png" width="1920" height="1000" alt="Главное меню Minecraft в стиле GlassLauncher" loading="lazy">
+          <span class="shot__label"><b>06</b> Minecraft UI</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section section--download" id="download">
+      <div class="download-card" data-reveal>
+        <div class="download-card__copy">
+          <span class="section__index">03 / СКАЧАТЬ</span>
+          <h2>Забери свой<br><span>GlassLauncher</span></h2>
+          <p>Один установщик. Внутри — всё, что нужно для первого запуска: Java 21, библиотеки, ассеты и любимые загрузчики.</p>
+
+          <ul class="check-list">
+            <li><span aria-hidden="true">✓</span> Windows 10 / 11, 64-bit</li>
+            <li><span aria-hidden="true">✓</span> Установка за пару минут</li>
+            <li><span aria-hidden="true">✓</span> Бесплатно, без рекламы и подписок</li>
+            <li><span aria-hidden="true">✓</span> Данные остаются на твоём компьютере</li>
+          </ul>
+
+          <p class="download-card__note">
+            Установщик не подписан цифровым сертификатом, поэтому SmartScreen может попросить подтверждение.
+            Сверь SHA-256 — и запускай.
+          </p>
+        </div>
+
+        <div class="download-card__panel">
+          <div class="download-card__top">
+            <span class="badge">РЕЛИЗ 1.0.0</span>
+            <span class="download-card__os">Windows · x64</span>
+          </div>
+
+          <div class="download-card__file">
+            <span class="download-card__file-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M6 3.5h8l4 4v13H6v-17Z" stroke="currentColor" stroke-width="1.2"/><path d="M14 3.5v4h4M9 12h6M9 15h6" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>
+            </span>
+            <span>
+              <strong>GlassLauncherSetup.exe</strong>
+              <small>4,20 МБ · установщик</small>
+            </span>
+          </div>
+
+          <a class="btn btn--primary btn--block" href="downloads/GlassLauncherSetup.exe" download="GlassLauncherSetup.exe" data-download>
+            <span class="btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 4v10m0 0 4-4m-4 4-4-4M5 19h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="btn__text"><strong>Скачать GlassLauncher</strong><small>Начать загрузку</small></span>
+          </a>
+
+          <div class="hash">
+            <span class="hash__label">SHA-256</span>
+            <code id="shaValue">8F34A94274CDCC94F5325A40E7BEBFF8978B2C188D3B653CBBF48B88CB6B6BBB</code>
+            <button class="hash__copy" id="copyHash" type="button" aria-label="Скопировать SHA-256">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="8.5" y="8.5" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M15.5 8.5V6.5a2 2 0 0 0-2-2h-7a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h2" stroke="currentColor" stroke-width="1.2"/></svg>
+            </button>
+          </div>
+
+          <div class="download-card__links">
+            <a href="downloads/GlassLauncher.exe" download="GlassLauncher.exe">Портативная версия</a>
+            <a href="downloads/GlassLauncherSetup.sha256" download>Файл SHA-256</a>
+            <a href="https://github.com/KilluaClicker/GlassLauncher/releases" target="_blank" rel="noopener">GitHub Releases</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="install">
+      <header class="section__head" data-reveal>
+        <span class="section__index">04 / УСТАНОВКА</span>
+        <h2>Три шага<br><span>до твоего мира.</span></h2>
+        <p>Без ручной настройки Java, папок и аргументов запуска. Всё, что нужно, лаунчер сделает сам.</p>
+      </header>
+
+      <ol class="steps">
+        <li class="step" data-reveal>
+          <span class="step__index">01</span>
+          <h3>Скачай установщик</h3>
+          <p>Нажми «Скачать GlassLauncher» и запусти `GlassLauncherSetup.exe`. Windows может спросить подтверждение — это нормально для неподписанного установщика.</p>
+        </li>
+        <li class="step" data-reveal>
+          <span class="step__index">02</span>
+          <h3>Выбери ник и версию</h3>
+          <p>Введи ник, выбери версию Minecraft и загрузчик. Для первого раза подойдёт Fabric или Vanilla — лаунчер подсветит, что уже готово.</p>
+        </li>
+        <li class="step" data-reveal>
+          <span class="step__index">03</span>
+          <h3>Нажми «Играть»</h3>
+          <p>Java 21, библиотеки, ассеты и загрузчик установятся автоматически. Дальше — только игра. Моды и скины можно добавить в любой момент.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section" id="faq">
+      <header class="section__head" data-reveal>
+        <span class="section__index">05 / ВОПРОСЫ</span>
+        <h2>Коротко<br><span>о главном.</span></h2>
+        <p>Если чего-то не хватает — загляни в README или напиши в GitHub Issues.</p>
+      </header>
+
+      <div class="faq">
+        <details data-reveal>
+          <summary>Это безопасно? <span aria-hidden="true"></span></summary>
+          <p>Да. GlassLauncher работает оффлайн, не просит пароль Microsoft и не отправляет данные на сторонние серверы. Установщик можно проверить по SHA-256, а исходники и сайт лежат в открытом репозитории.</p>
+        </details>
+        <details data-reveal>
+          <summary>Какие версии Minecraft поддерживаются? <span aria-hidden="true"></span></summary>
+          <p>Все релизы, снапшоты и старые версии из официального манифеста Mojang. Загрузчики: Fabric, Forge, NeoForge, Quilt и Vanilla. Версию можно менять перед каждым запуском.</p>
+        </details>
+        <details data-reveal>
+          <summary>Нужно ли устанавливать Java? <span aria-hidden="true"></span></summary>
+          <p>Нет. Лаунчер найдёт подходящую Java 21 или скачает её автоматически. Вручную настраивать переменные среды и аргументы запуска не нужно.</p>
+        </details>
+        <details data-reveal>
+          <summary>Куда ставятся моды и скины? <span aria-hidden="true"></span></summary>
+          <p>Моды — в <code>%APPDATA%\GlassLauncher\mods</code>. Папка открывается одной кнопкой прямо из лаунчера. Скины применяются через локальный ресурспак, поэтому работают даже в оффлайн-режиме.</p>
+        </details>
+        <details data-reveal>
+          <summary>Почему SmartScreen ругается на установщик? <span aria-hidden="true"></span></summary>
+          <p>Установщик не подписан платным сертификатом. Windows показывает предупреждение для многих небольших проектов. Нажми «Подробнее» → «Выполнить в любом случае» и сверь SHA-256 с указанным на сайте.</p>
+        </details>
+        <details data-reveal>
+          <summary>Можно ли играть с друзьями? <span aria-hidden="true"></span></summary>
+          <p>Да, на серверах, где разрешён оффлайн-вход. Для серверов с обязательной лицензией нужен аккаунт Microsoft — GlassLauncher его не заменяет.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="cta" data-reveal>
+      <div class="cta__glow" aria-hidden="true"></div>
+      <span class="section__index">06 / ПОЕХАЛИ</span>
+      <h2>Тишина стекла.<br><span>Точность запуска.</span></h2>
+      <p>Твой мир уже собран. Осталось нажать «Играть».</p>
+      <a class="btn btn--primary btn--large" href="downloads/GlassLauncherSetup.exe" download data-download>
+        <span class="btn__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 4v10m0 0 4-4m-4 4-4-4M5 19h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="btn__text"><strong>Скачать GlassLauncher</strong><small>Windows 10/11 · 4,20 МБ</small></span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a class="brand" href="#top" aria-label="GlassLauncher — наверх">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 2.75 21 8v8l-9 5.25L3 16V8l9-5.25Z" stroke="currentColor" stroke-width="1.05"/>
+              <path d="m8.35 10.05 3.4-2 3.9 2.3v3.3l-3.9 2.3-3.4-2" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="brand__name">GLASS<span>LAUNCHER</span></span>
+        </a>
+        <p>Лаунчер создан игроком KilluaDEV!</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Ссылки в подвале">
+        <a href="#features">Возможности</a>
+        <a href="#showcase">Скриншоты</a>
+        <a href="#download">Скачать</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://github.com/KilluaClicker/GlassLauncher" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+
+      <div class="footer__meta">
+        <span>© 2026 GlassLauncher</span>
+        <span>v1.0.0 · Windows</span>
+        <span class="footer__muted">Minecraft — товарный знак Mojang Studios. Проект не связан с Mojang или Microsoft.</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр скриншота" hidden>
+    <button class="lightbox__close" id="lightboxClose" type="button" aria-label="Закрыть">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+    </button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" type="button" aria-label="Предыдущий скриншот">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 5 8 12l7 7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <figure class="lightbox__figure">
+      <img id="lightboxImage" src="assets/screens/hero.png" alt="">
+      <figcaption>
+        <strong id="lightboxTitle">Главный экран</strong>
+        <span id="lightboxNote"></span>
+      </figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" type="button" aria-label="Следующий скриншот">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 5 7 7-7 7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span class="toast__dot" aria-hidden="true"></span>
+    <span id="toastText">Загрузка началась</span>
+  </div>
+
+  <noscript>
+    <style>[data-reveal]{opacity:1!important;transform:none!important}</style>
+  </noscript>
+  <script src="app.js"></script>
+</body>
+</html>

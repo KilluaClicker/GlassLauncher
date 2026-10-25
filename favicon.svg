@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="GlassLauncher">
+  <rect width="64" height="64" rx="16" fill="#08090b"/>
+  <path d="M32 10 51 21v22L32 54 13 43V21Z" fill="none" stroke="#f5f6f7" stroke-width="2"/>
+  <path d="m24 27 8-4.6 9 5.2v8L32 41l-8-4.6" fill="none" stroke="#f5f6f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

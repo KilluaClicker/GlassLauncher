@@ -1,0 +1,19 @@
+{
+  "name": "GlassLauncher",
+  "short_name": "Glass",
+  "description": "Монохромный лаунчер Minecraft от KilluaDEV. Fabric, Forge, NeoForge, Quilt, Vanilla, моды, скины и Java 21.",
+  "lang": "ru",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#050506",
+  "theme_color": "#050506",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
