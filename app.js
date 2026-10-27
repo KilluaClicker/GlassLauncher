@@ -262,6 +262,35 @@
   });
 
   /* ------------------------------------------------------------------------
+     Copy server IP
+     ------------------------------------------------------------------------ */
+
+  $$("[data-copy-ip]").forEach((button) => {
+    button.addEventListener("click", async () => {
+      const ip = button.dataset.copyIp;
+      if (!ip) return;
+      try {
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(ip);
+        } else if (!fallbackCopy(ip)) {
+          throw new Error("copy failed");
+        }
+        showToast(`IP скопирован · ${ip}`);
+        button.classList.add("is-copied");
+        const strong = button.querySelector(".btn__text strong");
+        const previous = strong ? strong.textContent : "";
+        if (strong) strong.textContent = "IP СКОПИРОВАН";
+        window.setTimeout(() => {
+          button.classList.remove("is-copied");
+          if (strong) strong.textContent = previous;
+        }, 1800);
+      } catch {
+        showToast("Не удалось скопировать — выдели IP вручную");
+      }
+    });
+  });
+
+  /* ------------------------------------------------------------------------
      Subtle pointer tilt for the hero preview
      ------------------------------------------------------------------------ */
 

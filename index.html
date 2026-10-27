@@ -79,6 +79,7 @@
       <nav class="nav__links" id="navLinks" aria-label="Навигация по сайту">
         <a href="#features">Возможности</a>
         <a href="#showcase">Скриншоты</a>
+        <a href="#servers">Сервера</a>
         <a href="#download">Скачать</a>
         <a href="#install">Установка</a>
         <a href="#faq">FAQ</a>
@@ -149,10 +150,9 @@
           <div class="app-window">
             <div class="app-window__bar">
               <span class="app-window__dots" aria-hidden="true"><i></i><i></i><i></i></span>
-              <span class="app-window__title">GlassLauncher.exe</span>
-              <span class="app-window__controls" aria-hidden="true">— □ ×</span>
+              <span class="app-window__title">GlassLauncher</span>
             </div>
-            <img src="assets/screens/hero.png" width="1440" height="900" alt="Главный экран GlassLauncher: выбор версии, загрузчика и ника, кнопка Играть" fetchpriority="high">
+            <img src="assets/screens/hero.png" width="1440" height="848" alt="Главный экран GlassLauncher: выбор версии, загрузчика и ника, кнопка Играть" fetchpriority="high">
           </div>
           <div class="float-chip float-chip--one" aria-hidden="true">
             <span class="float-chip__dot"></span>
@@ -288,10 +288,73 @@
       </div>
     </section>
 
+    <section class="section" id="servers">
+      <header class="section__head" data-reveal>
+        <span class="section__index">03 / СЕРВЕРА</span>
+        <h2>Топ серверов.<br><span>Один — уже здесь.</span></h2>
+        <p>Мы добавляем только те сервера, куда заходим сами. Сейчас в списке — MineRich: уютное выживание с живой экономикой и ивентами.</p>
+      </header>
+
+      <article class="server-feature" data-reveal>
+        <span class="server-feature__aura" aria-hidden="true"></span>
+        <span class="server-feature__shine" aria-hidden="true"></span>
+
+        <div class="server-feature__main">
+          <div class="server-feature__head">
+            <span class="server-feature__avatar">
+              <img src="assets/minerich.svg" width="72" height="72" alt="Аватар сервера MineRich" loading="lazy">
+            </span>
+            <div class="server-feature__title">
+              <span class="server-feature__kicker">MINE<span>RICH</span></span>
+              <h3>MineRich</h3>
+              <p>Выживание · экономика · события</p>
+            </div>
+            <span class="server-feature__rank">01</span>
+          </div>
+
+          <p class="server-feature__desc">
+            Мир, где приятно остаться: честное выживание, живой рынок, сезонные ивенты и
+            дружелюбное сообщество. Заходи один или приводи друзей — занятие найдётся для каждого.
+          </p>
+
+          <div class="server-feature__tags">
+            <span>Java Edition</span>
+            <span>Выживание</span>
+            <span>Экономика</span>
+            <span>Ивенты</span>
+          </div>
+
+          <ul class="server-feature__facts">
+            <li><span>Версия</span><strong>Java Edition</strong></li>
+            <li><span>Режим</span><strong>Выживание</strong></li>
+            <li><span>Адрес</span><strong>без порта</strong></li>
+          </ul>
+        </div>
+
+        <div class="server-feature__side">
+          <span class="server-feature__label">IP АДРЕС</span>
+          <code class="server-feature__ip" id="serverIp">Play.minerich.net</code>
+          <button class="btn btn--primary btn--block server-feature__copy" type="button" data-copy-ip="Play.minerich.net">
+            <span class="btn__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="8.5" y="8.5" width="10" height="10" rx="2.4" stroke="currentColor" stroke-width="1.2"/><path d="M15.5 8.5V6.5a2 2 0 0 0-2-2h-7a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h2" stroke="currentColor" stroke-width="1.2"/></svg>
+            </span>
+            <span class="btn__text"><strong>Скопировать IP</strong><small>и добавь сервер в Minecraft</small></span>
+          </button>
+          <p class="server-feature__note">
+            Открой Minecraft → «Сетевая игра» → «Добавить сервер», вставь адрес и сохрани.
+          </p>
+          <a class="server-feature__link" href="https://minerich.net" target="_blank" rel="noopener">
+            Сайт сервера
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+    </section>
+
     <section class="section section--download" id="download">
       <div class="download-card" data-reveal>
         <div class="download-card__copy">
-          <span class="section__index">03 / СКАЧАТЬ</span>
+          <span class="section__index">04 / СКАЧАТЬ</span>
           <h2>Забери свой<br><span>GlassLauncher</span></h2>
           <p>Один установщик. Внутри — всё, что нужно для первого запуска: Java 21, библиотеки, ассеты и любимые загрузчики.</p>
 
@@ -350,7 +413,7 @@
 
     <section class="section" id="install">
       <header class="section__head" data-reveal>
-        <span class="section__index">04 / УСТАНОВКА</span>
+        <span class="section__index">05 / УСТАНОВКА</span>
         <h2>Три шага<br><span>до твоего мира.</span></h2>
         <p>Без ручной настройки Java, папок и аргументов запуска. Всё, что нужно, лаунчер сделает сам.</p>
       </header>
@@ -376,7 +439,7 @@
 
     <section class="section" id="faq">
       <header class="section__head" data-reveal>
-        <span class="section__index">05 / ВОПРОСЫ</span>
+        <span class="section__index">06 / ВОПРОСЫ</span>
         <h2>Коротко<br><span>о главном.</span></h2>
         <p>Если чего-то не хватает — загляни в README или напиши в GitHub Issues.</p>
       </header>
@@ -411,7 +474,7 @@
 
     <section class="cta" data-reveal>
       <div class="cta__glow" aria-hidden="true"></div>
-      <span class="section__index">06 / ПОЕХАЛИ</span>
+      <span class="section__index">07 / ПОЕХАЛИ</span>
       <h2>Тишина стекла.<br><span>Точность запуска.</span></h2>
       <p>Твой мир уже собран. Осталось нажать «Играть».</p>
       <a class="btn btn--primary btn--large" href="downloads/GlassLauncherSetup.exe" download data-download>
@@ -441,6 +504,7 @@
       <nav class="footer__nav" aria-label="Ссылки в подвале">
         <a href="#features">Возможности</a>
         <a href="#showcase">Скриншоты</a>
+        <a href="#servers">Сервера</a>
         <a href="#download">Скачать</a>
         <a href="#faq">FAQ</a>
         <a href="https://github.com/KilluaClicker/GlassLauncher" target="_blank" rel="noopener">GitHub</a>
