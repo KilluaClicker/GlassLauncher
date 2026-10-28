@@ -322,7 +322,7 @@
      ------------------------------------------------------------------------ */
 
   console.log(
-    "%cGLASSLAUNCHER%c  v1.0.0",
+    "%cGLASSLAUNCHER%c  v1.1.0",
     "background:#f5f6f7;color:#08090b;font-weight:700;padding:6px 10px;border-radius:6px 0 0 6px;",
     "background:#111214;color:#f5f6f7;padding:6px 10px;border-radius:0 6px 6px 0;"
   );

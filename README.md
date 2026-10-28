@@ -4,8 +4,8 @@ Static landing page for **GlassLauncher**, a monochrome Minecraft launcher by Ki
 
 - Live site: https://killuaclicker.github.io/GlassLauncher/
 - Repository: https://github.com/KilluaClicker/GlassLauncher
-- Installer: `downloads/GlassLauncherSetup.exe` (v1.0.0)
-- SHA-256: `8F34A94274CDCC94F5325A40E7BEBFF8978B2C188D3B653CBBF48B88CB6B6BBB`
+- Installer: `downloads/GlassLauncherSetup.exe` (v1.1.0)
+- SHA-256: `8AEF82F1740F925CB2AF9330DBE32E6D8DF3D21E55786B196B58A999CB6108AE`
 
 ## Stack
 
@@ -38,7 +38,7 @@ The site is published with **GitHub Pages** from the `main` branch root.
 
 ```powershell
 git add .
-git commit -m "GlassLauncher site v1.0.0"
+git commit -m "GlassLauncher site v1.1.0"
 git push origin main
 ```
 
