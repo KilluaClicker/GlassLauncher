@@ -5,7 +5,7 @@ Static landing page for **GlassLauncher**, a monochrome Minecraft launcher by Ki
 - Live site: https://killuaclicker.github.io/GlassLauncher/
 - Repository: https://github.com/KilluaClicker/GlassLauncher
 - Installer: `downloads/GlassLauncherSetup.exe` (v1.1.0)
-- SHA-256: `8AEF82F1740F925CB2AF9330DBE32E6D8DF3D21E55786B196B58A999CB6108AE`
+- SHA-256: `E4968588E8B0B21A332E53BA9D5F9FB749560998D2F0F7045A33A269AD78108B`
 
 ## Stack
 
@@ -19,7 +19,7 @@ assets/fonts/       Onest + Unbounded (SIL OFL)
 assets/screens/     real launcher screenshots
 assets/og.png       1200x630 social preview
 downloads/          GlassLauncherSetup.exe + portable build + SHA-256
-favicon.svg         site icon
+favicon.png         site icon (GL glass mark)
 ```
 
 ## Local preview
